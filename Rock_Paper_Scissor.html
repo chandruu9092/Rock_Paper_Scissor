@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    
+  </style>
+  <body>
+    <center>
+    <div class="div-main">
+      
+          <span class="heading">ROCK PAPER SCISSOR</span> <br>
+
+            <div style="display: flex; width: 550px">
+              <div class="span-score">
+                <div class="score">
+                  wins <br>
+                  <span class="win" id="win">0</span>
+                </div>
+                <div class="score">
+                  loss <br>
+                  <span class="loss" id="loss">0</span>
+                </div>
+                <div class="score">
+                  ties <br>
+                  <span class="tie" id="tie">0</span>
+                </div>
+              </div>
+
+              <div class="div-compare">
+                <div style="display: inline-block;">
+                  YOUR PICK <br>
+                <span id="your">click </span>
+                </div>
+                <div style="display: inline-block; margin-left: 10px;">
+                  COMPUTER PICK <br>
+                <span id="computer"> click </span>
+                </div>
+              </div>
+            </div> 
+          <div id="result">
+            Result will be shown here
+          </div>
+          <div style="display: flex; width: 500px;">
+            <span>
+              <input onclick=" 
+              playgame('rock')
+              " class="btn"  type="image" src="photos/rock.png"> <br>
+              Rock
+            </span>
+            <span>
+              <input onclick="
+              playgame('paper')
+              " class="btn" type="image" src="photos/paper.png"> <br>
+              Paper 
+            </span>
+            <span>
+              <input onclick="
+              playgame('scissor')
+              " class="btn"  type="image" src="photos/scissor.png"> <br>
+              Scissor
+            </span>
+          </div>
+          <span>
+            <input class="btn" id="reset" type="image" src="photos/reset.png" onclick="
+           reset()
+            "> <br>
+            Reset
+          </span>
+     
+    </div>
+  </center>
+
+    <script src="js.js"> </script>
+    
+  </body>
+</html>
